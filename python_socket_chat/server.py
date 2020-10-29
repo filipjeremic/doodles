@@ -1,7 +1,7 @@
 import socket
 
 
-def initiate():
+def init():
     ip_address = input("Please enter the server IPv4 address: ").strip()
     port = int(input("Please enter the server port: "))
     address = (ip_address, port)
@@ -13,7 +13,7 @@ def initiate():
 
 
 if __name__ == "__main__":
-    server_socket = initiate()
+    server_socket = init()
 
     server_socket.listen()
     print(f"[STATUS] The server is listening on {server_socket.getsockname()}")
