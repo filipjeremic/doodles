@@ -13,7 +13,7 @@ def initiate():
 
 
 if __name__ == "__main__":
-    s = initiate()
+    server_socket = initiate()
 
-    s.listen()
-    print(f"[STATUS] The server is listening on {s.getsockname()}")
+    server_socket.listen()
+    print(f"[STATUS] The server is listening on {server_socket.getsockname()}")
