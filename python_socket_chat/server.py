@@ -1,19 +1,12 @@
-import socket
-
-
-def init():
-    ip_address = input("Please enter the server IPv4 address: ").strip()
-    port = int(input("Please enter the server port: "))
-    address = (ip_address, port)
-
-    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    s.bind(address)
-
-    return s
+from common import read_server_address
 
 
 if __name__ == "__main__":
-    server_socket = init()
+    server_address = read_server_address()
 
-    server_socket.listen()
-    print(f"[STATUS] The server is listening on {server_socket.getsockname()}")
+    #server_socket.listen()
+    #print(f"[STATUS] The server is listening on {server_socket.getsockname()}")
+
+    #client_socket, client_address = server_socket.accept()
+    #print(client_socket)
+    #print(client_address)
