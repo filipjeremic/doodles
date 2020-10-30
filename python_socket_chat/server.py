@@ -10,6 +10,6 @@ if __name__ == "__main__":
     print(
         f"[STATUS] The server is listening on {read_socket.getsockname()[0]}:{read_socket.getsockname()[1]}")
 
-    # write_socket, client_address = read_socket.accept()
+    write_socket, client_address = read_socket.accept()
     # print(client_socket)
     # print(client_address)
