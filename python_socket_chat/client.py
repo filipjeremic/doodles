@@ -9,5 +9,6 @@ if __name__ == "__main__":
 
     my_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     my_socket.connect(server_address)
+    server_address = my_socket.getpeername()
     print(
-        f"[STATUS] Successfully connected to {my_socket.getsockname()}:{123}")
+        f"[STATUS] Successfully connected to {server_address[0]}:{server_address[1]}")
