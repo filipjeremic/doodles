@@ -1,0 +1,21 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "cpplaunch",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceRoot}/${fileBasenameNoExtension}",
+      "externalConsole": false,
+      "logging": {
+        "moduleLoad": false,
+        "trace": true
+      },
+      "cwd": "${workspaceRoot}",
+      "preLaunchTask": "cppbuild"
+    }
+  ]
+}
